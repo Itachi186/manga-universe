@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manga Universe</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101014;
+      color: white;
+    }
+    header {
+      padding: 22px;
+      background: #1b1b23;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header h1 { margin: 0; color: #ff4757; }
+    nav a {
+      color: white;
+      margin-left: 12px;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 65px 20px;
+      background: linear-gradient(135deg, #282038, #111116);
+    }
+    .hero h2 { font-size: 38px; margin-bottom: 12px; }
+    .hero p { color: #ccc; line-height: 1.6; }
+    .section { padding: 25px 18px; }
+    .manga-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #202027;
+      padding: 14px;
+      border-radius: 12px;
+    }
+    .cover {
+      min-height: 190px;
+      background: linear-gradient(145deg, #57304b, #171723);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-size: 45px;
+    }
+    .card p { color: #ccc; font-size: 14px; }
+    .price { color: #ff6875; font-weight: bold; }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #ff4757;
+      color: white;
+      border: 0;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #aaa;
+      background: #1b1b23;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MANGA UNIVERSE</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Manga Shop</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Enter a New Universe</h2>
+    <p>Discover original stories, mysterious monsters and unforgettable heroes.</p>
+    <a href="#shop"><button style="max-width:220px">Explore Manga</button></a>
+  </section>
+
+  <section class="section" id="shop">
+    <h2>Our Manga</h2>
+    <p>New stories are waiting for you.</p>
+    <div class="manga-grid">
+      <div class="card">
+        <div class="cover">📕</div>
+        <h3>My First Manga</h3>
+        <p>Discover the beginning of an extraordinary adventure.</p>
+        <p class="price">₹49</p>
+        <button onclick="alert('Purchase link will be added after payment setup!')">Coming Soon</button>
+      </div>
+      <div class="card">
+        <div class="cover">🌑</div>
+        <h3>Dark Universe</h3>
+        <p>A mysterious world full of secrets.</p>
+        <p class="price">₹29</p>
+        <button onclick="alert('Purchase link will be added after payment setup!')">Coming Soon</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Manga Universe</p>
+    <p>Original stories. Unlimited imagination.</p>
+  </footer>
+</body>
+</html>
